@@ -231,4 +231,25 @@
     .hero-body {
         align-self: flex-end;
     }
+    .scroll-down{
+        font-size: 16px;
+        bottom: 125px;
+        left: 23px;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        color: #fff;
+        z-index: 100;
+    }
+    
+    .scroll-down:after {
+        content: "";
+        width: 2px;
+        height: 40px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -80px;
+    }
 }
