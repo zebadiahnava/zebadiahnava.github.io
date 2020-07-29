@@ -225,6 +225,10 @@
     }
 
     .hero-text {
-        font-size: 40px; 
+        font-size: 40px;
+        margin-top: 3em;
+    }
+    .hero-body {
+        align-self: flex-end;
     }
 }
