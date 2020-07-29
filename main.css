@@ -212,7 +212,8 @@
 
 @media screen and (max-width: 425px) {
     .snap-bg {
-        background-position: -650px -87px;
+        background-image: linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) ), url(snapping-fingers-abstract2-mobile.jpg);
+    
     }
 
     .carousel-bg {
@@ -220,7 +221,7 @@
     }
 
     .waving-bg {
-        background-image: linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) ), url('waving-hand-6-mobile.jpg');
+        background-image: linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) );
     }
 
     .hero-text {
