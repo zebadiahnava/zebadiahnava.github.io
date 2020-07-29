@@ -244,12 +244,12 @@
     .scroll-down:after {
         content: "";
         width: 2px;
-        height: 40px;
+        height: 60px;
         background: #fff;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-        bottom: -80px;
+        bottom: -70px;
     }
 }
