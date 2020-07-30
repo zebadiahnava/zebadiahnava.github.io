@@ -210,6 +210,12 @@
     letter-spacing: 1px;
 }
 
+.lets-talk {
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    font-size: 68px;
+}
+
 @media screen and (max-width: 425px) {
 
     .snap-bg {
@@ -231,6 +237,11 @@
     .hero-body {
         align-self: flex-end;
     }
+
+    .lets-talk {
+        font-size: 60px;
+    }
+
     .scroll-down{
         font-size: 16px;
         bottom: 125px;
