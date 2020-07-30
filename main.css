@@ -227,7 +227,7 @@
     }
 
     .waving-bg {
-        background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ),  url('waving-hand-7-mobile.jpg');
+        background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) );
     }
 
     .hero-text {
@@ -239,10 +239,10 @@
     }
 
     .lets-talk {
-        font-size: 60px;
+        font-size: 36px;
     }
 
-    .scroll-down{
+    /*.scroll-down{
         font-size: 16px;
         bottom: 125px;
         left: 23px;
@@ -262,5 +262,12 @@
         right: 0;
         margin: auto;
         bottom: -70px;
+    }*/
+     .scroll-down{
+        display: none;
+     }
+    
+    .scroll-down:after {
+        display: none;
     }
 }
