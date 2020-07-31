@@ -221,7 +221,17 @@ img.d-block.mx-auto {
     width: 50%;
 }
 
+.menu-wrap .hamburger {
+    top: -2px;
+    right: 30px;
+}
+
 @media screen and (max-width: 425px) {
+
+    .menu-wrap .hamburger {
+        top: -2px;
+        right: -8px;
+    }
 
     .snap-bg {
         background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url(snapping-fingers-abstract2-mobile.jpg);
@@ -232,7 +242,7 @@ img.d-block.mx-auto {
     }
 
     .waving-bg {
-        background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('waving-hand-8-mobile.jpg');
+        background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('waving-hand-9-mobile.jpg');
     }
 
     .hero-text {
