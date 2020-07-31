@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="revealer.css" />
     <link rel="stylesheet" href="main.css" />
 </head>
-<body style="background-color: black; ">
+<body style="background-color: black; height:auto !important;">
     <header class="container-fluid px-0 mt-2" style="background-image:linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) )" >
         <nav class="navbar navbar-expand-lg bg-transparent" style="z-index: 9999;">
             <div class="container-fluid mx-0 mx-md-5">
@@ -91,7 +91,7 @@
 
         </div>
 
-        <div class="section text-light text-center waving-bg">
+        <div class="section text-light text-center waving-bg last-section" id="lastsection">
             <div class="row vh-100">
                 <div id="rev-3" class="col-12 col-md-6 align-self-start align-self-sm-center ml-md-5 pl-5 mb-5 pb-5">
                     <h1 class="mb-5 lets-talk">
@@ -121,16 +121,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <script type="text/javascript" src="fullpage.js"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
-    <script type="text/javascript" src="js/scrollMonitor.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.js"></script>
     <script type = "text/javascript">
-        new fullpage('#fullpage', {
-            //options here
-            licenseKey: 'D687DC38-E49945C1-9B5B1272-217D85D5',
-            navigation: true,
-            navigationPosition: 'left'
-        });
 
+    
         $(document).ready(function init() {
             var rev1 = new RevealFx(document.querySelector('#rev-1'), {
                 revealSettings : {
@@ -140,8 +135,40 @@
                     }
                 }
             });
+
+
             rev1.reveal();
+
+            new fullpage('#fullpage', {
+            //options here
+            licenseKey: 'D687DC38-E49945C1-9B5B1272-217D85D5',
+            anchors: ['firstPage', 'secondPage', 'thirdPage'],
+
+            navigation: true,
+            navigationPosition: 'left',
+            onLeave: function(origin, destination, direction) {
+                var loadedSection = this;
+                if(origin.index == '1' && direction == 'down'){
+                    var rev3 = new RevealFx(document.querySelector('#rev-3'), {
+                        revealSettings : {
+                            bgcolor: 'darkmagenta',
+                            onCover: function(contentEl, revealerEl) {
+                                contentEl.style.opacity = 1;
+                            }
+                        }
+                    });
+                    rev3.reveal();
+                }
+            deleteLog = true;
+            }
+
+            });
         });
+
+
+
+
+ 
     </script>
 </body>
 </html>
