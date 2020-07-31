@@ -228,7 +228,7 @@
     }
 
     .waving-bg {
-        background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) );
+        background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('waving-hand-8-mobile.jpg');
     }
 
     .hero-text {
