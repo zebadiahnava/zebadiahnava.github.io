@@ -68,7 +68,7 @@
         </div>
         <div class="section carousel-bg">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-depth="0.3">
-                <div class="carousel-inner">
+                <div class="carousel-inner" id="rev-2">
                     <div class="carousel-item text-center active">
                         <img src="devices.webp" class="d-block mx-auto" alt="..." style="width: 50%">
                     </div>
@@ -141,12 +141,22 @@
             new fullpage('#fullpage', {
             //options here
             licenseKey: 'D687DC38-E49945C1-9B5B1272-217D85D5',
-            anchors: ['firstPage', 'secondPage', 'thirdPage'],
-
             navigation: true,
             navigationPosition: 'left',
             onLeave: function(origin, destination, direction) {
                 var loadedSection = this;
+                if(origin.index == '0' && direction == 'down'){
+                    var rev2 = new RevealFx(document.querySelector('#rev-2'), {
+                        revealSettings : {
+                            bgcolor: 'darkmagenta',
+                            direction: 'rl',
+                            onCover: function(contentEl, revealerEl) {
+                                contentEl.style.opacity = 1;
+                            }
+                        }
+                    });
+                    rev2.reveal();
+                }
                 if(origin.index == '1' && direction == 'down'){
                     var rev3 = new RevealFx(document.querySelector('#rev-3'), {
                         revealSettings : {
