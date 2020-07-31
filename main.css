@@ -239,6 +239,10 @@
         align-self: flex-end;
     }
 
+    .lets-talk-container {
+        margin-bottom: 8rem !important;
+    }
+
     .lets-talk {
         font-size: 36px;
     }
