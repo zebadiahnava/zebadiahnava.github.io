@@ -217,6 +217,10 @@
     font-size: 68px;
 }
 
+img.d-block.mx-auto {
+    width: 50%;
+}
+
 @media screen and (max-width: 425px) {
 
     .snap-bg {
@@ -245,6 +249,11 @@
 
     .lets-talk {
         font-size: 36px;
+    }
+
+    img.d-block.mx-auto {
+        width: 85%;
+        margin-top: 10rem;
     }
 
     /*.scroll-down{
