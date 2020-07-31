@@ -226,7 +226,23 @@ img.d-block.mx-auto {
     right: 30px;
 }
 
-@media screen and (max-width: 425px) {
+a.btn.btn-warning.btn-lg.mx-auto.ml-0.ml-lg-5.mt-3.rounded-0 {
+    font-size: 24px;
+}
+
+a.btn.btn-outline-warning.btn-lg.rounded-0.mt-3.ml-0.ml-md-3 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 501px) {
+
+    a.btn.btn-warning.btn-lg.mx-auto.ml-0.ml-lg-5.mt-3.rounded-0 {
+        font-size: 16px;
+    }
+    
+    a.btn.btn-outline-warning.btn-lg.rounded-0.mt-3.ml-0.ml-md-3 {
+        font-size: 16px;
+    }
 
     .menu-wrap .hamburger {
         top: -2px;
