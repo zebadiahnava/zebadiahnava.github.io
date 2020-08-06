@@ -265,7 +265,6 @@ a.btn.btn-outline-warning.btn-lg.rounded-0.mt-3.ml-0.ml-md-3 {
     .waving-bg {
         background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('waving-hand-9-mobile.jpg');
         background-size: cover;
-
     }
 
     .hero-text {
@@ -286,7 +285,7 @@ a.btn.btn-outline-warning.btn-lg.rounded-0.mt-3.ml-0.ml-md-3 {
 
     img.d-block.mx-auto {
         width: 85%;
-        margin-top: 3rem;
+        margin-top: -2rem;
     }
 
     /*.scroll-down{
