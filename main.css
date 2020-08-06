@@ -158,20 +158,20 @@
 }
 
 .snap-bg {
-    background-image: linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) ), url(snapping-fingers-abstract2.jpg);
+    background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url(snapping-fingers-abstract2.jpg);
     background-size: cover;
     background-position: center bottom;
 }
 
 .carousel-bg {
-    background-image: linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) ), url('hand-bg-bw-abstract10.jpg');
+    background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('hand-bg-bw-abstract10.jpg');
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;
 }
 
 .waving-bg {
-    background-image: linear-gradient(to left, rgba(139,0,139,.2), rgba(0,0,0,0) ), url('waving-hand-6.jpg');
+    background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('waving-hand-6.jpg');
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -226,6 +226,11 @@ img.d-block.mx-auto {
     right: 30px;
 }
 
+.menu-wrap .toggler {
+    top: -2px;
+    right: 30px;
+}
+
 a.btn.btn-warning.btn-lg.mx-auto.ml-0.ml-lg-5.mt-3.rounded-0 {
     font-size: 24px;
 }
@@ -259,6 +264,8 @@ a.btn.btn-outline-warning.btn-lg.rounded-0.mt-3.ml-0.ml-md-3 {
 
     .waving-bg {
         background-image: linear-gradient(to left, rgba(139,0,139,.3), rgba(0,0,0,0) ), url('waving-hand-9-mobile.jpg');
+        background-size: cover;
+
     }
 
     .hero-text {
